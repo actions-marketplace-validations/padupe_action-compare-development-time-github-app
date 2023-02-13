@@ -34096,9 +34096,9 @@ var core_2 = __nccwpck_require__(2186);
 exports.gitHubApp = new core_1.Octokit({
     authStrategy: auth_app_1.createAppAuth,
     auth: {
-        installationId: (0, core_2.getInput)("installationId"),
-        appId: (0, core_2.getInput)("appId"),
-        privateKey: (0, core_2.getInput)("privateKey"),
+        installationId: Number((0, core_2.getInput)("installationId")),
+        appId: Number((0, core_2.getInput)("appId")),
+        privateKey: (0, core_2.getInput)("privateKey").replace(/\\n/g, '\n'),
     },
 });
 
