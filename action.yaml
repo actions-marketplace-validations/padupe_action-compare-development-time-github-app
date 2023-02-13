@@ -1,4 +1,4 @@
-name: "Compare Development Time"
+name: "Compare Development Time with GitHub App"
 description: "This action calculates the time interval in days between a new implementation in the project."
 author: "Paulo Eduardo Peixoto"
 branding:
