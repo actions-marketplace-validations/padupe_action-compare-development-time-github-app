@@ -11,6 +11,9 @@ Action that returns the interval (in days) between the start of development and 
 ## Requiremets
 
 - GitHub App
+- Secret `CREDENTIALS_GITHUB_APP_PRIVATE_KEY` on format (no line break):
+
+`-----BEGIN RSA PRIVATE KEY-----\n ... \n-----END RSA PRIVATE KEY-----`
 
 ## Usage for metrics through Git Flow
 
