@@ -1,0 +1,31 @@
+{
+  "name": "action-compare-development-time-github-app",
+  "version": "1.0.0",
+  "description": "Action that validates the elapsed time interval in days for completion of the development of a new function or correction in the code.",
+  "main": "index.js",
+  "repository": "https://github.com/padupe/action-comparre-development-time-github-app",
+  "author": "Paulo Eduardo Peixoto <peixoto.pauloeduardo@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "swc src -d dist --source-maps --copy-files",
+    "package": "ncc build src/index.ts --license licenses.txt --source-map -o dist"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.61",
+    "@swc/core": "^1.3.35",
+    "@types/dotenv": "^8.2.0",
+    "@vercel/ncc": "^0.36.1",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "@octokit/auth-app": "^4.0.9",
+    "@octokit/core": "^4.2.0",
+    "dotenv": "^16.0.3",
+    "ts-node": "^10.9.1"
+  }
+}

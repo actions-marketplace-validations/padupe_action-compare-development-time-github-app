@@ -1,0 +1,24 @@
+name: "Compare Development Time"
+description: "This action calculates the time interval in days between a new implementation in the project."
+author: "Paulo Eduardo Peixoto"
+branding:
+  color: "purple"
+  icon: "clock"
+inputs:
+  installationId:
+    description: "GitHub App - Installation Id."
+    required: true
+  appId:
+    description: "GitHub App - App Id."
+    required: true
+  privateKey:
+    description: "GitHub App - Private Key"
+    required: true
+
+outputs:
+  suceess:
+    description: "Interval in days required for development."
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
