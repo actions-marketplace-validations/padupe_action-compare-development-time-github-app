@@ -7,6 +7,6 @@ export const gitHubApp = new Octokit({
   auth: {
     installationId: getInput("installationId"),
     appId: getInput("appId"),
-    privateKey: getInput("privateKey"),
+    privateKey: getInput("privateKey").replace(/\\n/g, '\n'),
   },
 });

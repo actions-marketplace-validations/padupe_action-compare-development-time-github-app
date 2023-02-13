@@ -33,9 +33,9 @@ jobs:
       - name: Compare Development Time
         uses: padupe/action-compare-development-time-github-app@1.0.0
         with:
-          installationId: ${{ secrets.GITHUB_APP_INSTALLATION_ID }}
-          appId: ${{ secrets.GITHUB_APP_ID }}
-          privateKey: ${{ secrets.GITHUB_APP_PRIVATE_KEY }}
+          installationId: ${{ secrets.CREDENTIALS_GITHUB_APP_INSTALLATION_ID }}
+          appId: ${{ secrets.CREDENTIALS_GITHUB_APP_ID }}
+          privateKey: ${{ secrets.CREDENTIALS_GITHUB_APP_PRIVATE_KEY }}
 ```
 
 ## General use
@@ -43,9 +43,9 @@ jobs:
 ```yaml
         uses: padupe/action-compare-development-time-github-app@1.0.0
         with:
-          installationId: ${{ secrets.GITHUB_APP_INSTALLATION_ID }}
-          appId: ${{ secrets.GITHUB_APP_ID }}
-          privateKey: ${{ secrets.GITHUB_APP_PRIVATE_KEY }}
+          installationId: ${{ secrets.CREDENTIALS_GITHUB_APP_INSTALLATION_ID }}
+          appId: ${{ secrets.CREDENTIALS_GITHUB_APP_ID }}
+          privateKey: ${{ secrets.CREDENTIALS_GITHUB_APP_PRIVATE_KEY }}
 ```
 
 ## Output
