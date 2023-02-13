@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
-import { type Octokit } from "@octokit/core";
+import { Octokit } from "@octokit/core";
 import { gitHubApp } from "../appOctokit/octokit";
-import { type IGitHubRepository } from "./IGitHubRepository";
+import { IGitHubRepository } from "./IGitHubRepository";
 import { setFailed } from "@actions/core";
 
 export class GitHubRepository implements IGitHubRepository {
