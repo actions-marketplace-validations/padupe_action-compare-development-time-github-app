@@ -75,4 +75,4 @@ jobs:
 
 ## Contribute to the Project
 
-Check our [CONTRIBUTING](./CONTRIBUTING) guidelines.
+Check our [CONTRIBUTING](./CONTRIBUTING.md) guidelines.
