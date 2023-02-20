@@ -1,5 +1,15 @@
 # action-compare-development-time-github-app
 
+## Index
+
+- [Description](#description)
+- [Requirements](#requiremets)
+- [Use](#use)
+  - [Usage for metrics through Git Flow](#usage-for-metrics-through-git-flow)
+  - [General use](#general-use)
+- [Output](#output)
+- [Contribute to the Project](#contribute-to-the-project)
+
 ## Description
 
 Action that returns the interval (in days) between the start of development and the opening of the Pull Request.
@@ -10,12 +20,20 @@ Action that returns the interval (in days) between the start of development and 
 
 ## Requiremets
 
-- GitHub App
+- [GitHub App](https://docs.github.com/en/apps)
+  - Required Permissions:
+    - **Repository**
+      - Actions [Read and write]
+      - Commit status [Read and write]
+      - Contents [Read and write]
+      - Pull requests [Read and write]
 - Secret `CREDENTIALS_GITHUB_APP_PRIVATE_KEY` on format (no line break):
 
 `-----BEGIN RSA PRIVATE KEY-----\n ... \n-----END RSA PRIVATE KEY-----`
 
-## Usage for metrics through Git Flow
+## Use
+
+### Usage for metrics through Git Flow
 
 1. Create directory `.github/worfklows` in the root of your project;
 
@@ -41,7 +59,7 @@ jobs:
           privateKey: ${{ secrets.CREDENTIALS_GITHUB_APP_PRIVATE_KEY }}
 ```
 
-## General use
+### General use
 
 ```yaml
         uses: padupe/action-compare-development-time-github-app@1.0.0
@@ -54,3 +72,7 @@ jobs:
 ## Output
 
 `interval` in days.
+
+## Contribute to the Project
+
+Check our [CONTRIBUTING](./CONTRIBUTING) guidelines.
